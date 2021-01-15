@@ -19,3 +19,4 @@ jobs:
       run: |
            touch setup.sh
            echo "${{ github.event.inputs.logLevel }}" >> "setup.sh"
+           cat setup.sh
