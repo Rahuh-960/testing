@@ -18,5 +18,5 @@ jobs:
     - name: generate script
       run: |
            touch setup.sh
-           echo "${{ inputs.auth.true }}" >> "setup.sh"
+           echo "${{ github.event.inputs.auth }}" >> "setup.sh"
            cat setup.sh
