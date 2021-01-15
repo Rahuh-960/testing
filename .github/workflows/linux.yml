@@ -16,6 +16,6 @@ jobs:
     steps: 
     
     - name: generate script
-        run: |
+      run: |
            touch setup.sh
            echo "${{ github.event.inputs.logLevel }}" >> "setup.sh"
